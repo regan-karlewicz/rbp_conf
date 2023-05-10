@@ -1,0 +1,82 @@
+{
+  "bridge": {
+    "name": "Homebridge",
+    "username": "",
+    "port": 51545,
+    "pin": "",
+    "advertiser": ""
+  },
+  "accessories": [],
+  "platforms": [
+    {
+      "name": "Config",
+      "port": 8581,
+      "platform": "config"
+    },
+    {
+      "name": "Govee",
+      "username": "govee@karlewr.net",
+      "password": "",
+      "lightDevices": [
+        {
+          "label": "Office",
+          "deviceId": "26:9D:D4:AD:FC:C9:CB:E2",
+          "awsBrightnessNoScale": true
+        },
+        {
+          "label": "Bedroom",
+          "deviceId": "0B:2C:D4:AD:FC:C9:CA:E8",
+          "awsBrightnessNoScale": true
+        },
+        {
+          "label": "Couch Left",
+          "deviceId": "0C:D4:D4:AD:FC:E2:18:9A",
+          "awsBrightnessNoScale": true
+        },
+        {
+          "label": "Couch Right",
+          "deviceId": "10:D5:D4:AD:FC:E2:25:60",
+          "awsBrightnessNoScale": true
+        }
+      ],
+      "platform": "Govee"
+    },
+    {
+      "email": "regan@karlewr.net",
+      "password": "",
+      "platform": "SmartRent"
+    },
+    {
+      "devices": [
+        {
+          "ipAddress": "192.168.0.149",
+          "serialNumber": "YN8-US-NEA5676A",
+          "credentials": "",
+          "useFahrenheit": true,
+          "enableAutoModeWhenActivating": false,
+          "enableOscillationWhenActivating": false,
+          "enableNightModeWhenActivating": false,
+          "isNightModeEnabled": false,
+          "isJetFocusEnabled": false,
+          "isContinuousMonitoringEnabled": false,
+          "isTemperatureSensorEnabled": false,
+          "isTemperatureIgnored": false,
+          "temperatureOffset": 0,
+          "isHumiditySensorEnabled": false,
+          "isHumidityIgnored": false,
+          "humidityOffset": 0,
+          "isAirQualitySensorEnabled": false,
+          "isAirQualityIgnored": false,
+          "isSingleSensorAccessoryModeEnabled": false,
+          "isSingleAccessoryModeEnabled": false,
+          "isFullRangeHumidity": false,
+          "isHeatingDisabled": false,
+          "isHeatingSafetyIgnored": false
+        }
+      ],
+      "updateInterval": 60000,
+      "credentialsGeneratorPort": 48000,
+      "platform": "DysonPureCoolPlatform"
+    }
+  ]
+}
