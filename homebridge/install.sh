@@ -7,3 +7,7 @@ echo "deb [signed-by=/usr/share/keyrings/homebridge.gpg] https://repo.homebridge
 # Install Homebridge
 sudo apt-get update
 sudo apt-get install homebridge
+
+# Download config.json from SSM Parameter Store
+./"$(dirname "$0")"/config.sh download
+echo Configuration downloaded to "$(dirname "$0")"/config.json
